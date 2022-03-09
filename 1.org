@@ -1,8 +1,9 @@
 #+latex_header: \usepackage[utf8x]{inputenc}
 #+latex_header: \usepackage[T2A]{fontenc}
 #+latex_header: \usepackage[russian,english]{babel}
+#+latex_header: \usepackage[bottom=0.5in,top=0.8in]{geometry}
 #+LATEX_CLASS: article
-#+LATEX_CLASS_OPTIONS: [a4paper,11pt,twoside,twocolumn]
+#+LATEX_CLASS_OPTIONS: [a4paper,twocolumn]
 #+OPTIONS: tex:imagemagick
 #+OPTIONS: toc:nil
 
