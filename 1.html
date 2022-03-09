@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-03-09 Ср 23:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Крутые таблицы</title>
+<meta name="author" content="Вася Панков" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Крутые таблицы</h1>
+
+
+<div id="outline-container-orgb22461a" class="outline-2">
+<h2 id="orgb22461a"><span class="section-number-2">1.</span> Производные</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Основы: 
+<img src="ltximg/1_ac3456be14dc666503dc8f4ee4b4e988721ade7e.png" alt="$$ (C)' = 0 $$" /> 
+<img src="ltximg/1_809559c7b2f6e878cbf1bfab115473046f9d7557.png" alt="$$ (x)' = 1 $$" /> 
+Таблицa производных сложных функций<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>:<br />
+<img src="ltximg/1_69ba66f1f08d0d21ea02230e4f40c1d781c47c59.png" alt="$$ (u^n)' = nu^{n - 1} \cdot u' $$" /> 
+<img src="ltximg/1_5e0c1701f105e8cdb85c6086e0942dc54bef32a2.png" alt="$$ (e^u)' = e^u \cdot u' $$" /> 
+<img src="ltximg/1_8a404b94f47d58b82c4813da168a8cfd4d83e3e0.png" alt="$$ (a^u)' = a^u \cdot lna \cdot u' $$" /> 
+<img src="ltximg/1_f026b83dc7bfa9b9cac95f87cb7d4904c240a122.png" alt="$$ (\ln u)' = \frac{1}{u} \cdot u' $$" />
+<img src="ltximg/1_ea64b4a073c9170fb72c046814762ce12d4a24e7.png" alt="$$ (\log_a u)' = \frac{1}{u \ln a } \cdot $$" />
+<img src="ltximg/1_be24d54aba979774f9e073039707f0bd00db58f0.png" alt="$$ (\sin u)' = \cos u \cdot u' $$" />
+<img src="ltximg/1_91c21a134b7b20fd655de254730c0744509b4218.png" alt="$$ (\cos u)' = -\sin u \cdot u' $$" />
+<img src="ltximg/1_a6d559a74043f08085e31591168c590a2d8fe54f.png" alt="$$ (\tg u)' = \frac{1}{\cos^2 u} \cdot u' $$" />
+<img src="ltximg/1_1fa2ab66709ede44d226e1cc7cfca674a71552b4.png" alt="$$ (\ctg u)' = -\frac{1}{\sin^2 u} \cdot u' $$" />
+<img src="ltximg/1_c29cf48fb9d21eef34d69253f8c484522637bbee.png" alt="$$ (\arcsin u)' = \frac{1}{\sqrt{1 - u ^ 2}} \cdot u' $$" />
+<img src="ltximg/1_58a9287e6a5c0dbb363bb7e1488fe66e71d3866a.png" alt="$$ (\arccos u)' = -\frac{1}{\sqrt{1 - u ^ 2}} \cdot u' $$" />
+<img src="ltximg/1_f4837272e55fbdf126ccd7a17ea0a30374288078.png" alt="$$ (\arctg u)' = \frac{1}{1 - u ^ 2} \cdot u' $$" />
+<img src="ltximg/1_a3e90661c2002c8495038a4a3abf7355cbea51aa.png" alt="$$ (\arcctg u)' = -\frac{1}{1 + u ^ 2} \cdot u' $$" /><br />
+</p>
+
+<p>
+Правила дифференцирования u = u(x), v = v(x):
+<img src="ltximg/1_d8afd092bdde1136bf62d56d8b0116cf671dad38.png" alt="$$(cu)' = cu' $$" />  <img src="ltximg/1_af23af06d1b0c5079fc8c4bc85e6e208a32464f9.png" alt="$$(\frac{u}{v})' = \frac{u'v-uv'}{v^2}$$" />
+<img src="ltximg/1_7e96cfe6e1bc21bb79bee68013b4c022a41283db.png" alt="$$(uv)' = u'v + uv'$$" />  <img src="ltximg/1_6a0ef896969d86671c392b110e2d2c61b1497c7d.png" alt="$$(u \pm v) = u' \pm v' $$" /> 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4ef901c" class="outline-2">
+<h2 id="org4ef901c"><span class="section-number-2">2.</span> Интегралы</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Основные свойства неопределённого интеграла:
+</p>
+<ol class="org-ol">
+<li><img src="ltximg/1_e9e1679f9e45c58ae24ff0b08dd11065a99845ab.png" alt="$$\int kf(x)dx = k\int f(x)dx$$" /></li>
+<li><img src="ltximg/1_ee4bf6b75fbbd42fb4fecd57861151e92d3dc5a0.png" alt="$$\int(f_1(x) \pm f_2(x))dx = \int f_1(x) \pm \int f_2(x)dx $$" /></li>
+</ol>
+<p>
+Немного простейших интегралов:
+<img src="ltximg/1_c2f672a21ad81c9b12b5093002b01c2569298071.png" alt="$$ \int dx = x + C $$" />
+<img src="ltximg/1_4689913230739ede2a12ea142db9149a5894f5c2.png" alt="$$ \int x^{-1}dx = \int \frac{dx}{x} = \ln|x| + C $$" />
+<img src="ltximg/1_8bb8d16a2dc281cf1c2a9af9c0d044118959203a.png" alt="$$ \int \frac{dx}{\sqrt{1 - x^2}} = \arcsin x + C $$" />
+<img src="ltximg/1_b09bc80621c520d94b5ca983528be19b99de02bc.png" alt="$$ \int \frac{dx}{1 + x^2} = \arcctg x + C $$" />
+Интегралы вида <img src="ltximg/1_fed25f69af3947e1a2dc61294b865a0c5b9ceb64.png" alt="$\int f(kx + b)dx$" /><sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>:
+<img src="ltximg/1_fcd00d58dbe505c615292c41e5e0ba0e5b1e5ba9.png" alt="$$ \int (kx + b)^n dx = \frac{(kx + b)^{n + 1}}{k(n + 1)} + C $$" />
+<img src="ltximg/1_113f31a7e62713a6766bd80c2fa023b43ef6ce5e.png" alt="$$ \int \frac{dx}{kx + b} = \frac{1}{k} \ln|kx + b| + C $$" />
+<img src="ltximg/1_ce2155c8c859eb598994530d03f3e53a31c268e0.png" alt="$$ \int a^{kx + b}dx = \frac{a^{kx + b}}{k \cdot \ln a} + C $$" />
+<img src="ltximg/1_598871be7cdbaa4f91c63aac501e1c78b12cb2a4.png" alt="$$ \int e^{kx + b}dx = \frac{e^{kx + b}}{k} + C $$" />
+<img src="ltximg/1_a8e3fabd05f33c72292f9894c80cf83540801d4f.png" alt="$$ \int \sin(kx + b)dx = -\frac{\cos(kx + b)}{k} + C $$" />
+<img src="ltximg/1_b7b23727f5f090d741285cdc5419b66aea8b43e3.png" alt="$$ \int \cos(kx + b)dx = \frac{\sin(kx + b)}{k} + C $$" />
+<img src="ltximg/1_98d3002cc0654c45792489f1fdc9403d39b60afc.png" alt="$$ \int \frac{dx}{\cos^2(kx + b)} = \frac{\tg(kx + b)}{k} + C $$" />
+<img src="ltximg/1_ce10fae3e40fbcfb7b3f40ee01a6bc0ddc2871bc.png" alt="$$ \int \frac{dx}{\sin^2(kx + b)} = -\frac{\ctg(kx + b)}{k} + C $$" />
+<img src="ltximg/1_2954332d7b27b14844c03b384396932fd7e63cf6.png" alt="$$ \int \frac{dx}{x^2-a^2} = \frac{1}{2a}\ln|\frac{x-a}{x+a}| + C$$" />
+<img src="ltximg/1_a50fc3cebfb1cb44e753daeb36ab7538a6075b2b.png" alt="$$ \int \frac{dx}{x^2+a^2} = \frac{1}{a}\arctg\frac{x}{a} + C$$" />
+<img src="ltximg/1_0bd180fc865fcbb7f5214cbdab08c9c1503c8b64.png" alt="$$ \int \frac{dx}{\sqrt{a^2 - x^2}} = \arcsin \frac{x}{a} + C$$" />
+<img src="ltximg/1_471afed253a45dc43ba2ec78e5d79892c3a59f06.png" alt="$$ \int \frac{dx}{\sqrt{x^2 \pm a^2}} = \ln|x + \sqrt{x^2 \pm a^2}| + C$$" />
+<img src="ltximg/1_6814df91b428e74524983cbfc1559896bd7c6e52.png" alt="$$ \int \tg x dx = -\ln|\cos x| + C $$" />
+<img src="ltximg/1_e873339deafb3b8d5432d7c12ea1d8c63caece3e.png" alt="$$ \int \ctg x dx = \ln|\sin x| + C $$" />
+Забытая тригонометрия:
+<img src="ltximg/1_7305fa41130a541f7a1465967ef4730f5f399aa8.png" alt="$$ \sin^2f(x) = \frac{1 - \cos2f(x)}{2} $$" />
+<img src="ltximg/1_fe35f507e3380f439ea7726e8978b7ad0b02506d.png" alt="$$ \cos^2f(x) = \frac{1 + \cos2f(x)}{2} $$" />
+</p>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+При простой логике понятно, что если подставить вместо u - x, то получим формулу для производной простой функции, ведь (x)' = 1.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Без k и b мы получим простой интеграл, также с помошью логики.
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: Вася Панков</p>
+<p class="date">Created: 2022-03-09 Ср 23:35</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
