@@ -1,12 +1,13 @@
 #+latex_header: \usepackage[utf8x]{inputenc}
 #+latex_header: \usepackage[T2A]{fontenc}
 #+latex_header: \usepackage[russian,english]{babel}
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [a4paper,11pt,twoside,twocolumn]
 #+OPTIONS: tex:imagemagick
 #+OPTIONS: toc:nil
-#+OPTIONS: tex:t
 
 #+TITLE: Крутые таблицы
-#+AUTHOR: Вася Панков\
+#+AUTHOR: Вася Панков
 
 #+begin_export latex
   \clearpage \tableofcontents \clearpage
@@ -16,8 +17,8 @@
 * Производные
 Основы: 
 $$ (C)' = 0 $$ 
-$$ (x)' = 1 $$ \\
-Таблицa производных сложных функций[fn:1]:
+$$ (x)' = 1 $$ 
+Таблицa производных сложных функций[fn:1]:\\
 $$ (u^n)' = nu^{n - 1} \cdot u' $$ 
 $$ (e^u)' = e^u \cdot u' $$ 
 $$ (a^u)' = a^u \cdot lna \cdot u' $$ 
